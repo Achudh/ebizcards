@@ -1,4 +1,4 @@
-package com.example.ebizcards
+package com.doer.ebizcards
 
 import io.flutter.embedding.android.FlutterActivity
 

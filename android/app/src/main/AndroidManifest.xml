@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ebizcards">
+    package="com.doer.ebizcards">
    <application
         android:label="ebizcards"
         android:icon="@mipmap/ic_launcher">

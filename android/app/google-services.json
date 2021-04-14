@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "487592577461",
+    "project_id": "bizcards-dev",
+    "storage_bucket": "bizcards-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487592577461:android:af0b051771acf91a6431fc",
+        "android_client_info": {
+          "package_name": "com.doer.ebizcards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487592577461-9qgqtd6f6ot1hbns288a95g5o230nd51.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.doer.ebizcards",
+            "certificate_hash": "3110b900376ee419a1289eafb4bd190ae4d96baf"
+          }
+        },
+        {
+          "client_id": "487592577461-3q6qc34pmd6bar5oqr221fkm7ftt9rnh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZWBmMPFhT72XXBooXWc5cTno3Mj0Sn_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487592577461-3q6qc34pmd6bar5oqr221fkm7ftt9rnh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "487592577461-d9bfl5q4d3lg90bonscgr9apum8oies1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.doer.ebizcards"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
