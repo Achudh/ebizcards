@@ -11,6 +11,7 @@ class LoginInitial extends LoginState {}
 
 class LoginLoading extends LoginState {}
 
+// ignore: must_be_immutable
 class LoginSucess extends LoginState {
   User user;
   LoginSucess({
@@ -18,6 +19,7 @@ class LoginSucess extends LoginState {
   });
 }
 
+// ignore: must_be_immutable
 class LoginFailed extends LoginState {
   String message;
   LoginFailed({@required this.message});

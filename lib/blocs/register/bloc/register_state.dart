@@ -11,6 +11,7 @@ class RegisterInitial extends RegisterState {}
 
 class RegisterLoading extends RegisterState {}
 
+// ignore: must_be_immutable
 class RegisterSucess extends RegisterState {
   User user;
   RegisterSucess({
@@ -18,6 +19,7 @@ class RegisterSucess extends RegisterState {
   });
 }
 
+// ignore: must_be_immutable
 class RegisterFailed extends RegisterState {
   String message;
   RegisterFailed({
