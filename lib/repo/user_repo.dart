@@ -11,6 +11,7 @@ class UserRepo {
       return auth.user;
     } catch (e) {
       print(e.toString());
+      return null;
     }
   }
 
@@ -23,6 +24,7 @@ class UserRepo {
     } catch (e) {
       print(e.toString());
     }
+    return null;
   }
 
   //sign in with email
@@ -36,21 +38,17 @@ class UserRepo {
 
   // check sign in
   Future<bool> isSignedIn() async {
-    try {
-      var currentUser = await firebaseAuth.currentUser;
-      return currentUser != null;
-    } catch (e) {
-      print(e.toString());
-    }
+    var currentUser = firebaseAuth.currentUser;
+    return currentUser != null;
   }
 
   // get current user
   Future<User> getCurrentUser() async {
     try {
-      var currentUser = await firebaseAuth.currentUser;
-      return currentUser;
+      return firebaseAuth.currentUser;
     } catch (e) {
       print(e.toString());
     }
+    return null;
   }
 }

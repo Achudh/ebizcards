@@ -45,3 +45,7 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 pubspec.lock
+ios/Podfile.lock
+.gitignore
+ios/Runner.xcworkspace/contents.xcworkspacedata
+.vscode/launch.json
