@@ -37,7 +37,7 @@ class Home extends StatelessWidget {
           return SignIn();
         }
         if (state is AuthenticateState) {
-          return HomeScreen();
+          return HomeScreen(user: state.user);
         }
         return SignIn();
       },

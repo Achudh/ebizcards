@@ -7,3 +7,7 @@ abstract class AuthEvent extends Equatable {
 }
 
 class AppLoaded extends AuthEvent {}
+
+class SigningOut extends AuthEvent {}
+
+class SignedOut extends AuthEvent {}

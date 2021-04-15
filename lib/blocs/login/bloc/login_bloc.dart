@@ -26,5 +26,14 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
         yield LoginFailed(message: e.toString());
       }
     }
+    if (event is SignOutButtonPressed) {
+      yield LoginLoading();
+      try {
+        await userRepo.signOut();
+        yield SignOutSucess();
+      } catch (e) {
+        yield SignOutFailed(message: e.toString());
+      }
+    }
   }
 }

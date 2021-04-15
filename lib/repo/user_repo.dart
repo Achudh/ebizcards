@@ -1,17 +1,19 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/services.dart';
 
 class UserRepo {
-  FirebaseAuth firebaseAuth = FirebaseAuth.instance;
-  UserRepo({this.firebaseAuth});
+  FirebaseAuth firebaseAuth;
+  UserRepo() {
+    this.firebaseAuth = FirebaseAuth.instance;
+  }
   //sign up with email
   Future<User> signUp(String email, String password) async {
     try {
       var auth = await firebaseAuth.createUserWithEmailAndPassword(
           email: email, password: password);
       return auth.user;
-    } catch (e) {
-      print(e.toString());
-      return null;
+    } on PlatformException catch (e) {
+      throw Exception(e.toString());
     }
   }
 
@@ -46,6 +48,17 @@ class UserRepo {
   Future<User> getCurrentUser() async {
     try {
       return firebaseAuth.currentUser;
+    } catch (e) {
+      print(e.toString());
+    }
+    return null;
+  }
+
+  //sign in Anonymously
+  Future<User> signInAnon() async {
+    try {
+      var auth = await firebaseAuth.signInAnonymously();
+      return auth.user;
     } catch (e) {
       print(e.toString());
     }

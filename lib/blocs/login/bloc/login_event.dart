@@ -15,3 +15,5 @@ class SignInButtonPressed extends LoginEvent {
     @required this.password,
   });
 }
+
+class SignOutButtonPressed extends LoginEvent {}
