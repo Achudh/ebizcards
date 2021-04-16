@@ -24,15 +24,3 @@ class LoginFailed extends LoginState {
   String message;
   LoginFailed({@required this.message});
 }
-
-// ignore: must_be_immutable
-class SignOut extends LoginState {}
-
-// ignore: must_be_immutable
-class SignOutSucess extends LoginState {}
-
-// ignore: must_be_immutable
-class SignOutFailed extends LoginState {
-  String message;
-  SignOutFailed({this.message});
-}
